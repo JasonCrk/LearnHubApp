@@ -4,9 +4,7 @@ import type { SubmitHandler } from 'react-hook-form'
 
 import type { LoginRequest } from '../../api/auth'
 
-import { useLoginMutation } from '../../libs/fetching/mutations/auth'
-
-import { useLoginForm } from '../../hooks/auth'
+import { useLoginForm, useLoginMutation } from '../../hooks/auth'
 
 import { Box, Button, Link, Typography } from '@mui/material'
 
