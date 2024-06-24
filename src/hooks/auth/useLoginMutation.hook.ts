@@ -2,11 +2,11 @@ import { useNavigate } from 'react-router-dom'
 
 import { useMutation } from '@tanstack/react-query'
 
-import { AuthActionKind } from '../../../../contexts/AuthContext/types'
+import { AuthActionKind } from '../../contexts/AuthContext/types'
 
-import { loginService } from '../../../../services/auth'
+import { useAuthContext } from './'
 
-import { useAuthContext } from '../../../../hooks/auth'
+import { loginService } from '../../services/auth'
 
 export const useLoginMutation = () => {
   const navigate = useNavigate()

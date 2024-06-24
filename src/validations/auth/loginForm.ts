@@ -13,5 +13,5 @@ export const loginForm = z.object({
       required_error: 'Es requerido',
       invalid_type_error: 'Tipo de dato invalido',
     })
-    .min(10, 'Minimo 10 caracteres'),
+    .min(10, 'Mínimo 10 caracteres'),
 })

@@ -19,6 +19,17 @@ export function AuthLayout() {
           width: '100%',
         }}
       >
+        <Box
+          component={'img'}
+          src={'/logo.png'}
+          sx={{
+            width: '100%',
+            height: '56px',
+            objectFit: 'contain',
+            objectPosition: 'center',
+          }}
+        />
+
         <Outlet />
       </Paper>
     </Box>
