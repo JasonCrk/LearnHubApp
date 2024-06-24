@@ -6,6 +6,8 @@ import { routes } from './routes'
 
 import { FetchingProvider } from './libs/fetching/Provider'
 
+import { SnackbarProvider } from 'notistack'
+
 import { AuthContextProvider } from './contexts/AuthContext'
 
 import { CssBaseline } from '@mui/material'
@@ -21,8 +23,10 @@ createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <FetchingProvider>
       <AuthContextProvider>
-        <CssBaseline />
-        <RouterProvider router={routes} />
+        <SnackbarProvider maxSnack={4}>
+          <CssBaseline />
+          <RouterProvider router={routes} />
+        </SnackbarProvider>
       </AuthContextProvider>
     </FetchingProvider>
   </StrictMode>,
